@@ -3,14 +3,27 @@
   flex-direction: column;
   background-color: @dark;
   background-image: url("../img/header/back-mobile.jpg");
+  background-position: 50% 0;
   background-size: image-size("../img/header/back-mobile.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/header/back-tablet.jpg");
+    background-position: 50% 0;
+    background-size: image-size("../img/header/back-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/header/back-desktop.jpg");
+    background-position: 50% 0;
+    background-size: image-size("../img/header/back-desktop.jpg");
+  }
 }
 
 .page-header__logo {
   height: 66px;
-
+  color: #ffffff;
 
   @media (min-width: @tablet-width) {
     .page-header__logo {
