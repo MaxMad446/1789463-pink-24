@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: @dark;
   background-image: url("../img/header/back-mobile.jpg");
-  background-position: 50% 0;
+  background-position: 50% 10%;
   background-size: image-size("../img/header/back-mobile.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
@@ -22,18 +22,18 @@
 }
 
 .page-header__logo {
-  height: 66px;
+  min-height: 460px;
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
     .page-header__logo {
-      height: 110px;
+      min-height: 730px;
     }
   }
 
   @media (min-width: @desktop-width) {
     .page-header__logo {
-      height: 110px;
+      min-height: 850px;
     }
   }
 }
