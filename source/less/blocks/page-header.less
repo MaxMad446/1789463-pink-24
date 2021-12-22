@@ -1,15 +1,16 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background: @dark;
+  background-color: @dark;
+  background-image: url("../img/header/back-mobile.jpg");
+  background-size: image-size("../img/header/back-mobile.jpg");
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 
 .page-header__logo {
   height: 66px;
 
-  outline: 5px solid rgba(255, 0, 0, 0);
-  color: #ffffff;
 
   @media (min-width: @tablet-width) {
     .page-header__logo {
