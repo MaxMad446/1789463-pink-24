@@ -5,27 +5,54 @@
 }
 
 .stats__header {
+  margin: 0 auto;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+  color: @darkblue;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .stats__list {
+  min-height: 828px;
+  padding-top: 100px;
   text-align: center;
+  background-color: @lightgray;
   background-image: url("../img/stats/iphone-screen-mobile.png");
+  background-size: 135px 245px;
   background-position: bottom;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/stats/iphone-screen-tablet.png");
     background-position: left;
-    background-size: image-size("../img/stats/iphone-screen-tablet.png");
+    background-size: 268px 547px;
   }
 
   @media (min-width: @desktop-width) {
+    text-align: center;
     background-image: url("../img/stats/iphone-screen-desktop.png");
-    background-size: image-size("../img/stats/iphone-screen-desktop.png");
+    background-size: 165px 244px;
   }
+}
+
+.stats__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.stats__description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
