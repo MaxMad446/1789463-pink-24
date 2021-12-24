@@ -1,0 +1,51 @@
+.photos {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.photos span {
+  text-align: center;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.photos__content {
+  width: 280px;
+  background: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.photos__username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.photos__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.photos__liketext {
+  color: #d22856;
+}

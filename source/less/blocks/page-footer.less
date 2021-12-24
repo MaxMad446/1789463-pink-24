@@ -1,0 +1,16 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
+}
