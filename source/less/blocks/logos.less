@@ -1,12 +1,33 @@
 .logos {
   display: flex;
   min-height: 271px;
-  background: #1d2631;
+  background: @dark;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    background-color: unset;
+  }
 }
 
 .logos__wrapper {
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-color: unset;
+  }
+}
+
+.logos__title {
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  background-color: unset;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+  }
 }
 
 .logos__btn {
@@ -20,11 +41,15 @@
   font-size: 18px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #1d2631;
+  background-color: @dark;
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    background-color: unset;
+  }
 }
 
 .logos__img {
@@ -46,4 +71,8 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    background-color: unset;
+  }
 }

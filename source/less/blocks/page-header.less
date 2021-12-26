@@ -1,16 +1,17 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  height: 462px;
   background-color: @dark;
   background-image: url("../img/header/back-mobile.jpg");
-  background-position: 50% 10%;
+  background-position: 50% 20px;
   background-size: image-size("../img/header/back-mobile.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/header/back-tablet.jpg");
-    background-position: 50% 0;
+    background-position: 50% 85%;
     background-size: image-size("../img/header/back-tablet.jpg");
   }
 
@@ -21,8 +22,10 @@
   }
 }
 
-.page-header__logo {
-  min-height: 460px;
+.page-header__logo-wrapper {
+  height: 66px;
+  background: #000000;
+  opacity: 0.3;
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
