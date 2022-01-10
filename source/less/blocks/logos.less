@@ -1,12 +1,10 @@
 .logos {
-  display: flex;
   padding-top: 424px;
   background-image: url("../img/header/iphone-mobile.png");
-  background-position: 80% 0;
-  background-size: contain;
+  background-position: 0 27%;
+  background-size: 286px 320px;
   background-repeat: no-repeat;
   color: #ffffff;
-
 
   @media (min-width: @tablet-width) {
     background-color: unset;
@@ -14,7 +12,11 @@
 }
 
 .logos__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
+  background-color: @dark;
 
   @media (min-width: @tablet-width) {
     background-color: unset;
@@ -23,6 +25,10 @@
 }
 
 .logos__title {
+  position: absolute;
+  top: 95px;
+  width: 280px;
+  text-align: center;
   font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -74,7 +80,6 @@
 }
 
 .logos__text {
-  width: 280px;
   margin-bottom: 34px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
