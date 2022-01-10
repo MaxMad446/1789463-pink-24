@@ -1,8 +1,12 @@
 .logos {
   display: flex;
-  min-height: 271px;
-  background: @dark;
+  padding-top: 424px;
+  background-image: url("../img/header/iphone-mobile.png");
+  background-position: 80% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: #ffffff;
+
 
   @media (min-width: @tablet-width) {
     background-color: unset;
@@ -14,6 +18,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: unset;
+    margin: 0;
   }
 }
 
@@ -27,6 +32,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
+    height: 127px;
+    width: 300px;
   }
 }
 
@@ -55,16 +62,20 @@
 .logos__img {
   display: flex;
   align-items: center;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 
 .logos__img li {
   margin-right: 35px;
 }
 
+.logos__img li:first-child {
+  margin-left: 38px;
+}
+
 .logos__text {
   width: 280px;
-  height: 34px;
+  margin-bottom: 34px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
