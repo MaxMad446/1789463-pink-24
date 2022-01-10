@@ -33,7 +33,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-
+    padding-top: 40px;
   }
 }
 
@@ -43,15 +43,16 @@
   text-align: center;
   background-color: @lightgray;
   background-image: url("../img/stats/iphone-screen-mobile.png");
-  background-size: 135px 245px;
-  background-position: 50% 106%;
+  background-size: 50%;
+  background-position: 50% 110%;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     height: 500px;
     background-image: url("../img/stats/iphone-screen-tablet.png");
     background-position: left;
-    background-size: 268px 547px;
+    background-size: 268px 482px;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,6 +62,12 @@
   }
 }
 
+.stats__item {
+  display: grid;
+  justify-content: end;
+  margin-right: 80px;
+}
+
 .stats__title {
   font-weight: bold;
   font-size: 18px;
@@ -68,7 +75,12 @@
 }
 
 .stats__description {
+  width: 280px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+  }
 }
