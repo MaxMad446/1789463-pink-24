@@ -11,7 +11,7 @@
   @media (min-width: @tablet-width) {
     background-image: url("../img/header/back-tablet.jpg");
     background-position: 50% 85%;
-    background-size: image-size("../img/header/back-tablet.jpg");
+    background-size: 1200px 729px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,20 +22,19 @@
 }
 
 .page-header__logo-wrapper {
+  display: flex;
+
   height: 66px;
   background: rgba(0, 0, 0, 0.3);
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    .page-header__logo {
-      color: #ffffff;
-    }
+    height: 110px;
+    color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
-    .page-header__logo {
-      color: #ffffff;
-    }
+    color: #ffffff;
   }
 }
 

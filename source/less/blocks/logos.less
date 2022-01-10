@@ -7,7 +7,10 @@
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    padding-top: 330px;
     background-color: unset;
+    background-position: 90% bottom;
+    background-size: 470px 545px;
   }
 }
 
@@ -19,8 +22,16 @@
   background-color: @dark;
 
   @media (min-width: @tablet-width) {
+    display: inline-block;
     background-color: unset;
-    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+.logos__header {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: -85px;
   }
 }
 
@@ -37,9 +48,11 @@
   background-color: unset;
 
   @media (min-width: @tablet-width) {
+    top: 212px;
+    left: 78px;
     font-size: 40px;
     height: 127px;
-    width: 300px;
+    width: 207px;
   }
 }
 
@@ -61,6 +74,7 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    width: 300px;
     background-color: unset;
   }
 }
@@ -90,5 +104,6 @@
 
   @media (min-width: @tablet-width) {
     background-color: unset;
+    font-size: 18px;
   }
 }
