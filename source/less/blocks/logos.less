@@ -1,16 +1,25 @@
 .logos {
+  margin: 0 auto;
+  width: 280px;
   padding-top: 424px;
   background-image: url("../img/header/iphone-mobile.png");
-  background-position: 0 27%;
+  background-position: 50% 27%;
   background-size: 286px 320px;
   background-repeat: no-repeat;
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    width: 660px;
+    max-width: 660px;
     padding-top: 330px;
     background-color: unset;
     background-position: 90% bottom;
     background-size: 470px 545px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    max-width: 960px;
   }
 }
 
@@ -48,11 +57,20 @@
   background-color: unset;
 
   @media (min-width: @tablet-width) {
+    display: block;
     top: 212px;
-    left: 78px;
+    margin-left: 42px;
     font-size: 40px;
     height: 127px;
     width: 207px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 150px;
+    width: 247px;
+    margin-left: 20px;
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
@@ -76,6 +94,10 @@
   @media (min-width: @tablet-width) {
     width: 300px;
     background-color: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
   }
 }
 

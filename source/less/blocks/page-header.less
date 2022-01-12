@@ -11,13 +11,13 @@
   @media (min-width: @tablet-width) {
     background-image: url("../img/header/back-tablet.jpg");
     background-position: 50% 85%;
-    background-size: 1200px 729px;
+    background-size: 1200px 730px;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/header/back-desktop.jpg");
     background-position: 50% 0;
-    background-size: image-size("../img/header/back-desktop.jpg");
+    background-size: 2560px 730px;
   }
 }
 
@@ -42,10 +42,6 @@
   padding: 20px;
 }
 
-.page-header__logo svg {
-  margin-top: 22px;
-}
-
 .page-header__toggle {
   position: absolute;
   top: 0;
@@ -61,5 +57,9 @@
   &:hover,
   &:active {
     background-color: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
