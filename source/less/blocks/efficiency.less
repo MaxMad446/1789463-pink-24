@@ -1,0 +1,71 @@
+.efficiency {
+  display: none;
+  margin-top: 51px;
+  margin-bottom: 109px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 276px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
+    min-height: 345px;
+    background-color: @lightgray;
+  }
+}
+
+.efficiency__content-wrapper {
+  display: flex;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width){
+    min-height: 276px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 345px;
+  }
+}
+
+.efficiency__image {
+  width: 236px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 35px;
+  margin-right: 71px;
+  background-image: url("../img/icon-timer.svg");
+  background-size: 236px;
+  background-repeat: no-repeat;
+}
+
+.efficiency__image-text {
+  width: 202px;
+  height: 202px;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 163px;
+  color: @red;
+  border-radius: 50%;
+  border: 16px solid #D22856;
+  box-sizing: border-box;
+}
+
+.efficiency__effect {
+  @media (min-width: @tablet-width) {
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 920px;
+  }
+}
