@@ -54,13 +54,18 @@
 .price__list_header {
   width: 276px;
   height: 94px;
-  background-color: @darkblue;
-  border: 2px solid #283645;
-  border-radius: 1px 0 0 0;
-  color: #ffffff;
   font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: @darkblue;
+  border: 2px solid #283645;
+  border-radius: 1px 0 0 0;
+
+  &:first-child {
+    background-color: unset;
+    border: none;
+  }
 }
 
 .price__list_license-type {
