@@ -1,12 +1,18 @@
 .table-price__cell {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
   background-color: #ffffff;
 
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    text-transform: unset;
     padding: 18px 24px 17px 15px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 23px 65px 23px 22px;
+    font-weight: normal;
+    font-size: 18px;
   }
 }
 
@@ -16,9 +22,9 @@
 }
 
 .table-price__feature-value {
-  display: block;
   width: 31px;
   height: 23px;
+  display: block;
   background-size: contain;
 }
 
