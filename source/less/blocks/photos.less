@@ -1,8 +1,9 @@
 .photos {
   width: 320px;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
 
@@ -12,7 +13,9 @@
   }
 }
 
+
 .photos span {
+  display: flex;
   text-align: center;
   font-size: 14px;
 
@@ -22,7 +25,6 @@
 }
 
 .photos__content {
-  width: 280px;
   background: #f2f2f2;
 
   @media (min-width: @tablet-width) {
