@@ -46,13 +46,44 @@
   }
 }
 
+
 .page-header__logo {
-  padding-top: 20px;
+  padding: 20px;
+
+  &--visible-tablet {
+    display: none;
+  }
+
+  &--visible-desktop {
+    display: none;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
+    display: flex;
+
+    &--visible-mobile {
+      display: none;
+    }
+
+    &--visible-desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+
+    &--visible-mobile {
+      display: none;
+    }
+
+    &--visible-tablet {
+      display: none;
+    }
   }
 }
+
 
 .page-header__toggle {
   z-index: 2;
