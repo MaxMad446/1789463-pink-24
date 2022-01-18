@@ -1,21 +1,55 @@
-.photos {
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/*.photos {
   margin: 0 auto;
   line-height: 24px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Calibri", sans-serif;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
   }
 }
+*/
 
+.photos__wrapper {
+  margin: 0 20px;
+}
 
-.photos span {
+.photos__content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photos__item {
+  background-color: @lightgray;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+
+.photos__header-text {
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-size: 14px;
 
@@ -24,15 +58,43 @@
   }
 }
 
-.photos__content {
-  background: #f2f2f2;
+.photos__image-wrapper {
+  display: flex;
+  text-align: center;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
+    width: 300px;
+    height: 300px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
+    height: 400px;
+  }
+}
+
+.photos__image--panorama {
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }
+}
+
+.photo__comments {
+  width: 253px;
+  background: @lightgray;
+
+  @media (min-width: @tablet-width) {
+    width: 510px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 832px;
   }
 }
 
@@ -41,6 +103,10 @@
   font-size: 14px;
 }
 
+.photos__like-panorama {
+  display: flex;
+  align-items: center;
+}
 
 .photos__text {
   font-style: normal;
@@ -48,6 +114,6 @@
   font-size: 14px;
 }
 
-.photos__liketext {
+.photos__like-text {
   color: #d22856;
 }
