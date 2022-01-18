@@ -3,6 +3,31 @@
   background: @lightgray;
 }
 
+.photo-editor__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 49px;
+  margin-bottom: 52px;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 73px;
+    margin-bottom: 78px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 67px;
+    margin-bottom: 75px;
+  }
+}
+
+.photo-editor__tagline {
+  margin: 0;
+}
+
 .photo-editor__wrapper {
   background: @lightgray;
 }
