@@ -26,10 +26,19 @@
 .photos__content-catalog {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .photos__wrapper {
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .photos__wrapper picture {
