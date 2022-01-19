@@ -30,6 +30,28 @@
 
 .photo-editor__wrapper {
   background: @lightgray;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.photo-editor__container {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.photo-editor__upload-image {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .photo-editor__item {
