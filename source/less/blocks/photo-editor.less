@@ -40,6 +40,7 @@
 .photo-editor__container {
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -47,30 +48,99 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 20px;
+  padding-bottom: 43px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    padding-top: 57px;
+    padding-right: 48px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 90px;
+    padding-bottom: 57px;
+  }
+}
+
+.photos__item-image {
+  height: 374px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
   }
 }
 
 .photo-editor__item {
+  width: 280px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-bottom: 39px;
   list-style: none;
+
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
   }
 }
 
-.photos-editor__container-btn {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  background: @lightgray;
+.photo-editor__piece {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px rgba(40, 54, 69, 0.1);
+}
 
+
+.photos__editor-range {
+  top: 5px;
+  position: relative;
+  width: 280px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  background-color: @darkblue;
+}
+
+.range-toggle {
+  position: absolute;
+  right: 33px;
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 2px solid @red;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.photos__editor-range--crop,
+.photos__editor-range--fill,
+.photos__editor-range--contrast {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.photos__editor-range--global {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photos-editor__container-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  background: @lightgray;
+  padding-top: 38px;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
