@@ -63,6 +63,15 @@
   }
 }
 
+.photos__editor__upload-img {
+  height: 374px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+
 .photos__item-image {
   height: 180px;
 
@@ -87,7 +96,7 @@
 .photo-editor__item {
   width: 280px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
   padding-left: 0;
   padding-bottom: 39px;
@@ -99,6 +108,7 @@
     flex-direction: column;
     margin: 0;
     margin-top: 66px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -110,21 +120,51 @@
   min-height: 58px;
   display: flex;
   align-items: center;
-  border-bottom: 1px rgba(40, 54, 69, 0.1);
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
 }
 
-.photo-editor__piece svg {
+.photo-editor__wrapper-icon {
+  padding: 5px;
+}
+
+.photo-editor__icon-crop {
   @media (min-width: @tablet-width) {
+    width: 22px;
     height: 22px;
-    padding-right: 28px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 44px;
     height: 44px;
-    padding-right: 48px;
   }
 }
 
+.photo-editor__icon-fill {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.photo-editor__icon-contrast {
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 .photos__editor-range {
   top: 5px;
@@ -174,11 +214,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 30px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   background: @lightgray;
-  padding-top: 38px;
-  padding-bottom: 30px;
+  border-top: 1px solid rgba(40, 54, 69, 0.1);
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding-top: 67px;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
