@@ -1,4 +1,4 @@
-.logos {
+.app-list {
   margin: 0 auto;
   width: 280px;
   padding-top: 424px;
@@ -23,7 +23,7 @@
   }
 }
 
-.logos__wrapper {
+.app-list__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,14 +37,14 @@
   }
 }
 
-.logos__header {
+.app-list__header {
   @media (min-width: @tablet-width) {
     position: relative;
     top: -85px;
   }
 }
 
-.logos__title {
+.app-list__title {
   position: absolute;
   top: 95px;
   width: 280px;
@@ -74,17 +74,11 @@
   }
 }
 
-.logos__btn {
+.app-list__btn {
   width: 280px;
   height: 55px;
   margin-top: 28px;
   margin-bottom: 38px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: #ffffff;
   background-color: @dark;
   border: 3px solid #ffffff;
   box-sizing: border-box;
@@ -101,21 +95,34 @@
   }
 }
 
-.logos__img {
+.app-list__btn a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.app-list__el-list {
   display: flex;
   align-items: center;
   margin-bottom: 28px;
 }
 
-.logos__img li {
+.app-list__el-list li {
   margin-right: 35px;
 }
 
-.logos__img li:first-child {
+.app-list__el-list li:first-child {
   margin-left: 38px;
 }
 
-.logos__text {
+.app-list__text {
   margin-bottom: 34px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
