@@ -39,7 +39,7 @@
   text-transform: uppercase;
 }
 
-.price__toggles {
+.price-app__toggles {
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -90,4 +90,47 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+}
+
+
+.price-app__cell {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    text-transform: unset;
+    padding: 18px 24px 17px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 65px 23px 22px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+}
+
+.price-app__feature {
+  display: flex;
+  justify-content: center;
+}
+
+.price-app__feature-value {
+  width: 31px;
+  height: 23px;
+  display: block;
+  background-size: contain;
+}
+
+.price-app__feature-value--true {
+  background-image: url("../img/icon-yes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.price-app__feature-value--false {
+  background-image: url("../img/icon-no.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
