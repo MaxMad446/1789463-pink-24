@@ -27,9 +27,15 @@
   }
 }
 
+
 .registration-form__el {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .registration-form__span {
@@ -37,4 +43,19 @@
   font-size: 14px;
   line-height: 30px;
   color: @red;
+}
+
+.registration-form__input {
+  border: 2px solid @lightgray;
+  border-radius: 1px;
+  height: 55px;
+}
+
+.registration-form__input::placeholder {
+  font-family: "Open Sans", "calibri", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  width: max-content;
 }
