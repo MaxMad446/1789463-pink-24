@@ -79,24 +79,23 @@
       <form class="reg-form container" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="reg-form__block reg-form__user">
           <legend class="visually-hidden">Данные пользователя</legend>
-          <p class="reg-form__el">
-            <label class="reg-form__label" for="surname">
-              <span class="reg-form__span">ФАМИЛИЯ:</span>
-            </label>
-            <input class="reg-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-          </p>
-          <p class="reg-form__el">
-            <label class="reg-form__label" for="name">
-              <span class="reg-form__span">ИМЯ:</span>
-            </label>
-            <input class="reg-form__input" type="text" name="name" id="name" placeholder="Укажите ваше имя *">
-          </p>
-          <p class="reg-form__el">
-            <label class="reg-form__label" for="middle-name">
-              <span class="reg-form__span">ОТЧЕСТВО:</span>
-            </label>
-            <input class="reg-form__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
-          </p>
+          <ul class="reg-form__list">
+            <li class="reg-form__item">
+              <label class="reg-form__label">Фамилия:
+                <input class="reg-form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+              </label>
+            </li>
+            <li class="reg-form__item">
+              <label class="reg-form__label">Имя:
+                <input class="reg-form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+              </label>
+            </li>
+            <li class="reg-form__item">
+              <label class="reg-form__label">Отчество:
+                <input class="reg-form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </label>
+            </li>
+          </ul>
         </fieldset>
 
       <fieldset class="reg-form__block reg-form__progress">
@@ -160,11 +159,15 @@
                 <span class="applications__el-mark"></span>
                 <span class="applications__el-label">Pink для iOS</span>
             </label>
+          </li>
+          <li class="applications__item">
             <label class="applications__el">
                 <input class="visually-hidden applications__el-input" type="radio" name="Android" value="no">
                 <span class="applications__el-mark"></span>
                 <span class="applications__el-label">Pink на Android</span>
             </label>
+          </li>
+          <li class="applications__item">
             <label class="applications__el">
                 <input class="visually-hidden applications__el-input" type="radio" name="Windows" value="no">
                 <span class="applications__el-mark"></span>
