@@ -1,0 +1,94 @@
+.reg-form__block {
+  font-family: "Open Sans", "Calibri", sans-serif;
+  background-color: @lightgray;
+  margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    background-color: unset;
+    border: 2px solid @lightgray;
+    border-radius: 1px;
+    margin-bottom: 65px;
+  }
+}
+
+.reg-form__title {
+  text-align: center;
+  color: @red;
+  text-transform: uppercase;
+}
+
+.reg-form__submit {
+  display: flex;
+
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.reg-form__submit-button {
+  width: 276px;
+  height: 59px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  background: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
+}
+
+.applications__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-form__feeling {
+  display: flex;
+  justify-content: center;
+  border: unset;
+
+  @media (min-width: @tablet-width) {
+    padding: 47px 60px 53px;
+    border: 2px solid @lightgray;
+    border-radius: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 44px 60px 44px;
+  }
+}
+
+.applications__el-mark {
+  border: 2px solid @lightgray;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.reg-form__comment {
+  min-width: 276px;
+  padding: 22px 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: @darkblue;
+  border: 2px solid @lightgray;
+  border-radius: 1px;
+
+
+  @media (min-width: @tablet-width) {
+    min-width: 450px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 770px;
+  }
+}

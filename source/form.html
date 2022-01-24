@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-   <header class="page-header catalog">
+   <header class="page-header form">
       <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
         <div class="page-header__content container">
           <div class="page-header__logo-wrapper">
@@ -72,33 +72,35 @@
 
     <main class="page-main">
 
-      <p class="page-main__title container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-      <form class="registration-form__user container" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="page-main__wrapper container">
+        <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      </div>
 
-        <fieldset class="form-choice registration-form">
+      <form class="reg-form container" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="reg-form__block reg-form__user">
           <legend class="visually-hidden">Данные пользователя</legend>
-          <p class="registration-form__el">
-            <label class="registration-form__label" for="surname">
-              <span class="registration-form__span">ФАМИЛИЯ:</span>
+          <p class="reg-form__el">
+            <label class="reg-form__label" for="surname">
+              <span class="reg-form__span">ФАМИЛИЯ:</span>
             </label>
-            <input class="registration-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            <input class="reg-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
           </p>
-          <p class="registration-form__el">
-            <label class="registration-form__label" for="name">
-              <span class="registration-form__span">ИМЯ:</span>
+          <p class="reg-form__el">
+            <label class="reg-form__label" for="name">
+              <span class="reg-form__span">ИМЯ:</span>
             </label>
-            <input class="registration-form__input" type="text" name="name" id="name" placeholder="Укажите ваше имя *">
+            <input class="reg-form__input" type="text" name="name" id="name" placeholder="Укажите ваше имя *">
           </p>
-          <p class="registration-form__el">
-            <label class="registration-form__label" for="middle-name">
-              <span class="registration-form__span">ОТЧЕСТВО:</span>
+          <p class="reg-form__el">
+            <label class="reg-form__label" for="middle-name">
+              <span class="reg-form__span">ОТЧЕСТВО:</span>
             </label>
-            <input class="registration-form__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+            <input class="reg-form__input" type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
 
-      <fieldset class="form-choice progress">
-        <legend class="form-choice__title">Ваши безбашенные достижения в путешествии</legend>
+      <fieldset class="reg-form__block reg-form__progress">
+        <legend class="reg-form__title">Ваши безбашенные достижения в путешествии</legend>
         <ul class="progress__list">
           <li class="progress__item">
             <input class="visually-hidden progress-input" type="checkbox" name="Сделал селфи с акулой" checked>
@@ -133,8 +135,8 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form-choice communication">
-        <legend class="form-choice__title form-choice__title--communication">Контактная информация</legend>
+      <fieldset class="reg-form__block communication">
+        <legend class="reg-form__title reg-form__title--communication">Контактная информация</legend>
           <p class="communication__el">
             <label class="communication__label" for="tel">
               <span class="communication__span">НОМЕР ТЕЛЕФОНА</span>
@@ -149,14 +151,14 @@
           </p>
       </fieldset>
 
-      <fieldset class="form-choice applications">
-        <legend class="form-choice__title">С каким приложением путешествовали?</legend>
+      <fieldset class="reg-form__block reg-form_applications">
+        <legend class="reg-form__title">С каким приложением путешествовали?</legend>
         <ul class="applications__list">
           <li class="applications__item">
             <label class="applications__el">
                 <input class="visually-hidden applications__el-input" type="radio" name="iOS" value="yes" checked>
-                <span class="control-mark"></span>
-                <span class="control-label">Pink для iOS</span>
+                <span class="applications__el-mark"></span>
+                <span class="applications__el-label">Pink для iOS</span>
             </label>
             <label class="applications__el">
                 <input class="visually-hidden applications__el-input" type="radio" name="Android" value="no">
@@ -172,17 +174,17 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form-choice feeling">
+      <fieldset class="reg-form__block reg-form__feeling">
           <h2 class="visually-hidden">Эмоции</h2>
-          <legend class="form-choice__title">Опишите свои эмоции</legend>
-          <textarea name="form-choice__comment" id="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <legend class="reg-form__title">Опишите свои эмоции</legend>
+          <textarea class="reg-form__comment" name="reg-form__comment" id="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
 
-      <div class="form-choice__submit">
-        <button class="form-choice__submit-button" type="submit">Отправить форму</button>
-        <small class="form-choice__note">
-          <sup class="form-choice__symbol">*</sup>
-          <span class="form-choice__text">— обязательные поля</span>
+      <div class="reg-form__submit">
+        <button class="reg-form__submit-button" type="submit">Отправить форму</button>
+        <small class="reg-form__note">
+          <sup class="reg-form__symbol">*</sup>
+          <span class="reg-form__text">— обязательные поля</span>
         </small>
       </div>
 
