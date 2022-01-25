@@ -136,18 +136,19 @@
 
       <fieldset class="reg-form__block communication">
         <legend class="reg-form__title reg-form__title--communication">Контактная информация</legend>
-          <p class="communication__el">
-            <label class="communication__label" for="tel">
-              <span class="communication__span">НОМЕР ТЕЛЕФОНА</span>
+        <ul class="communication__list">
+          <li class="communication__el">
+            <label class="communication__label" for="tel">НОМЕР ТЕЛЕФОНА
+              <input class="communication__input" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста">
             </label>
-            <input class="communication__input" type="text" name="tel" id="tel" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="communication__el">
+          </li>
+          <li class="communication__el">
             <label class="communication__label" for="email">
               <span class="communication__span">АДРЕС ПОЧТЫ</span>
             </label>
             <input class="communication__input" type="text" name="email" id="email" placeholder="Введите почту *">
-          </p>
+          </li>
+        </ul>
       </fieldset>
 
       <fieldset class="reg-form__block reg-form_applications">
