@@ -125,8 +125,22 @@
 
 // Progress //
 
-.progress__list {
+.reg-form__progress {
+  background-color: @lightgray;
+  border: none;
 
+  @media (min-width: @tablet-width) {
+    background-color: unset;
+    border: 2px solid @lightgray;
+    border-radius: 1px;
+  }
+}
+
+.reg-form__title {
+
+}
+
+.progress__list {
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
