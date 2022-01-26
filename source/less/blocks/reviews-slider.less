@@ -62,16 +62,32 @@
   }
 }
 
-.reviews-slider__toggles {
+.reviews-slider__pagination {
   display: flex;
   justify-content: center;
-  list-style: none;
+  margin: 0;
+  list-style-type: none;
+}
+
+.reviews-slider__peace {
+  margin-right: 19px;
 }
 
 .reviews-slider__toggle {
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
   background-color: @darkblue;
   opacity: 0.3;
   border: none;
   border-radius: 50%;
-  margin-right: 19px;
+  cursor: pointer;
+}
+
+.reviews-slider__toggle-current {
+  background-color: #ffffff;
+  outline: 3px solid @darkblue;
+  opacity: unset;
+  border-radius: 50%;
 }
