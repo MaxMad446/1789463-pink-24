@@ -101,22 +101,113 @@
   }
 }
 
+
+.reg-form__comment {
+  min-width: 276px;
+  padding: 22px 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: @darkblue;
+  border: 2px solid @lightgray;
+  border-radius: 1px;
+
+
+  @media (min-width: @tablet-width) {
+    min-width: 450px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 770px;
+  }
+}
+
+// Progress //
+
+.progress__list {
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 2em;
+    grid-gap: 47px;
+  }
+}
+
+.progress__item {
+  position: relative;
+  display: block;
+  list-style-type: none;
+  margin-bottom: 47px;
+}
+
+.progress-mark {
+  content: "";
+  position: absolute;
+  border: 2px solid @lightgray;
+  border-radius: 1px;
+  width: 35px;
+  height: 35px;
+}
+
+.progress-input[type="checkbox"]:checked + .progress-mark::before,
+.progress-input[type="checkbox"]:checked + .progress-mark::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  height: 2px;
+  width: 25px;
+  background-color: @red;
+}
+
+.progress-input[type="checkbox"]:checked + .progress-mark::before {
+  transform: rotate(-45deg);
+}
+
+.progress-input[type="checkbox"]:checked + .progress-mark::after {
+  width: 10px;
+  top: 20px;
+  left: 6px;
+  transform: rotate(45deg);
+}
+
+.progress-label {
+  padding-left: 57px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+// Application //
+
 .applications__list {
   margin: 0;
   padding: 50px 52px;
 }
 
 .applications__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 38px;
 }
 
 .applications__el {
-  position: relative;
   display: flex;
   padding-left: 30px;
   align-items: center;
+  appearance: none;
+}
+
+.applications__el-label {
+  padding-left: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .applications__el-mark {
@@ -139,32 +230,42 @@
   border-radius: 50%;
 }
 
-.applications__el-label {
-  padding-left: 22px;
+
+// Communication //
+
+.communication__label {
+  display: flex;
+}
+
+.communication__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @red;
+}
+
+.communication__item {
+  list-style-type: none;
+  appearance: none;
+}
+
+.communication__input {
+  height: 55px;
+  border: 2px solid @lightgray;
+  border-radius: 1px;
+}
+
+.communication__input::placeholder {
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
 }
 
-
-.reg-form__comment {
-  min-width: 276px;
-  padding: 22px 20px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: @darkblue;
-  border: 2px solid @lightgray;
-  border-radius: 1px;
-
-
-  @media (min-width: @tablet-width) {
-    min-width: 450px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 770px;
-  }
+.communication__icon {
+  padding: 10px;
+  background-color: @lightgray;
 }
