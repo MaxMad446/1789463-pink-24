@@ -103,13 +103,38 @@
   }
 }
 
+.price-app-list-header-hit {
+  position: relative;
+  background-image: url("../img/hit.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+
+.price-app-list-header-hit::before {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  content: attr(data-parent);
+  transform: rotate(-45deg);
+}
+
 .price-app-list-license-type {
+  padding: 0;
+  margin: 0;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
 }
 
 .price-app-list-license-price {
+  padding: 0;
+  margin: 0;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
