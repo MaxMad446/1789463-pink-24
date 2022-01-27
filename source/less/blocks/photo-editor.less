@@ -7,14 +7,14 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 49px;
-  margin-bottom: 52px;
+  margin-top: 30px;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 73px;
-    margin-bottom: 78px;
+    margin-top: 44px;
+    margin-bottom: 70px;
     font-size: 18px;
   }
 
@@ -48,13 +48,13 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 43px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
+    width: 310px;
     margin: 0;
     padding-top: 57px;
-    padding-right: 48px;
-    padding-bottom: 54px;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,24 +68,17 @@
 
   @media (min-width: @tablet-width) {
     height: 400px;
+    width: 300px;
   }
 }
 
-
-.photos__item-image {
-  height: 180px;
-
-  @media (min-width: @tablet-width) {
-    height: 400px;
-  }
-}
 
 .photo-editor__list {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 260px;
+    width: 310px;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,15 +92,16 @@
   justify-content: space-evenly;
   margin: 0 auto;
   padding-left: 0;
-  padding-bottom: 39px;
+  padding-bottom: 19px;
   list-style: none;
 
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: 267px;
     flex-direction: column;
     margin: 0;
-    margin-top: 66px;
+    margin-top: 46px;
+    padding-left: 33px;
     padding-bottom: 0;
   }
 
@@ -122,13 +116,14 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
+    min-height: 70px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 }
 
 .photo-editor__wrapper-icon {
   padding: 5px;
-  width: 60px;
+  width: 40px;
 }
 
 .photo-editor__icon-crop {
@@ -170,14 +165,15 @@
 .photos__editor-range {
   top: 5px;
   position: relative;
-  width: 280px;
+  width: 241px;
   height: 2px;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 38px;
   background-color: @darkblue;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+    width: 200px;
   }
 }
 
@@ -210,6 +206,10 @@
   }
 }
 
+.photos__editor-range--crop .range-toggle {
+  right: 26px;
+}
+
 .photos__editor-range--fill .range-toggle {
   left: 25px;
 }
@@ -231,8 +231,10 @@
   border-top: 1px solid rgba(40, 54, 69, 0.1);
 
   @media (min-width: @tablet-width) {
+    width: 280px;
+    padding-top: 65px;
+    padding-left: 27px;
     border-top: none;
-    padding-top: 67px;
   }
 
   @media (min-width: @desktop-width) {

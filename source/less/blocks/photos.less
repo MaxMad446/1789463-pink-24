@@ -11,15 +11,37 @@
   text-align: center;
   font-size: 14px;
 
+  br:first-child {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
-    height: 228px;
+    min-height: 137px;
     font-size: 18px;
     line-height: 30px;
+    padding-top: 28px;
+    margin-bottom: 15px;
+
+    br:first-child {
+      display: block;
+    }
+
+    br:last-child {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 572px;
     height: 240px;
+
+    br:first-child {
+      display: none;
+    }
+
+    br:last-child {
+      display: block;
+    }
   }
 }
 
@@ -27,7 +49,7 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 
@@ -115,14 +137,32 @@
 }
 
 .photos__comments {
-  min-height: 144px;
-  padding: 25px;
+  min-height: 94px;
+  padding: 15px;
+  padding-left: 17px;
+  padding-right: 10px;
   font-size: 12px;
   background-color: @lightgray;
 
   @media (min-width: @tablet-width) {
-    min-height: 155px;
-    padding: 30px;
+    min-height: 112px;
+    padding-left: 30px;
+    padding-top: 19px;
+    display: grid;
+    grid-template-rows: 25% 53%;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.photos__comments--panorama {
+  @media (min-width: @tablet-width) {
+    min-height: 90px;
+    padding-left: 30px;
+    padding-top: 19px;
+    padding-bottom: 0;
   }
 }
 
@@ -143,28 +183,74 @@
 .photos__like-panorama {
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: -74px;
+    right: 4px;
+    justify-content: flex-end;
+  }
 }
 
 .photos__text {
+  margin: 0;
+  margin-bottom: 8px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: @darkblue;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
+
+.photos__like {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
 
 .photos__like-button {
   width: 135px;
+  padding-left: 0;
+  padding-right: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
+  background-color: unset;
+
+  @media (min-width: @tablet-width) {
+    min-width: 100%;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+  }
+}
+
+.photos__like-button--panorama {
+  width: 135px;
+  padding-left: 0;
+  padding-right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: unset;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
+  }
 }
 
 .photos__like-text {
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
-  color: #d22856;
+  color: @red;
   text-transform: uppercase;
 }
