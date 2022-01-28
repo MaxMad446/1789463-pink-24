@@ -1,10 +1,10 @@
 .app-list {
   margin: 0 auto;
-  width: 280px;
-  padding-top: 424px;
+  width: 100%;
+  padding-top: 430px;
   background-image: url("../img/header/iphone-mobile.png");
-  background-position: 50% 27%;
-  background-size: 286px 320px;
+  background-position: 0 29%;
+  background-size: 257px 286px;
   background-repeat: no-repeat;
   color: #ffffff;
 
@@ -38,6 +38,9 @@
 }
 
 .app-list__header {
+  position: relative;
+  top: -6px;
+
   @media (min-width: @tablet-width) {
     position: relative;
     top: -85px;
@@ -46,7 +49,7 @@
 
 .app-list__title {
   position: absolute;
-  top: 76px;
+  top: 90px;
   width: 280px;
   text-align: center;
   font-family: "Open Sans", "Calibri", sans-serif;
@@ -76,8 +79,8 @@
 
 .app-list__btn-container {
   width: 280px;
-  margin-top: 26px;
-  margin-bottom: 38px;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 .app-list__btn {
@@ -119,7 +122,7 @@
 .app-list__el-list {
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
   padding: 0;
   list-style-type: none;
 }
@@ -129,11 +132,16 @@
 }
 
 .app-list__el-list li:first-child {
+  margin-top: -2px;
   margin-left: 38px;
 }
 
+.app-list__el-list li:last-child {
+  margin-top: 5px;
+}
+
 .app-list__text {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
