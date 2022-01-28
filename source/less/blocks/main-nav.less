@@ -1,4 +1,5 @@
 .main-nav__list {
+  display: none;
   margin: 0;
   padding: 0;
   width: auto;
@@ -11,6 +12,10 @@
   background: @dark;
   list-style: none;
   border-top: 1px solid @dark;
+
+  &--active {
+    display: block;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -89,11 +94,14 @@
   &::after {
     content: "";
     position: absolute;
-    top: 23px;
-    left: 20px;
+    top: 30px;
     width: 30px;
     height: 3px;
     background-color: #ffffff;
+
+    @media (min-width: @tablet-width) {
+      top: 43px;
+    }
   }
 
   &::before {
@@ -107,12 +115,12 @@
 
   &:hover::before,
   &:hover::after {
-    background-color: #d22856;
+    background-color: @red;
   }
 
   &:active::before,
   &:active::after {
-    background-color: fade(#d22856, 30%);
+    background-color: fade(@red, 30%);
   }
 }
 
@@ -141,9 +149,22 @@
     line-height: 18px;
   }
 
+
   &:hover {
-    border-bottom: 2px solid #ffffff;
+    color: @red;
+    transition: border 0.1s linear;
   }
+
+  &:focus {
+    opacity: 0.3;
+    border: none;
+    outline: none;
+  }
+}
+
+.site-list__link--active {
+  border-bottom: 2px solid #ffffff;
+  transition: border 0.1s linear;
 }
 
 .site-list__item:last-child {

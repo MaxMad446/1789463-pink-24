@@ -34,6 +34,8 @@
   @media (min-width: @desktop-width) {
     width: 572px;
     height: 240px;
+    padding-top: 0;
+    margin-bottom: 0;
 
     br:first-child {
       display: none;
@@ -164,6 +166,11 @@
     padding-top: 19px;
     padding-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 30px;
+    padding-top: 20px;
+  }
 }
 
 .photos__time {
@@ -190,6 +197,10 @@
     right: 4px;
     justify-content: flex-end;
   }
+
+  @media (min-width: @desktop-width) {
+    top: -64px;
+  }
 }
 
 .photos__text {
@@ -203,6 +214,10 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 6px;
   }
 }
 
