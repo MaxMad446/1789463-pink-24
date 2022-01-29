@@ -11,7 +11,7 @@
   @media (min-width: @tablet-width) {
     padding-top: 86px;
     padding-bottom: 69px;
-    background-size: 100% 50px;
+    background-size: 100% 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +26,7 @@
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    margin-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,7 +105,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    min-width: 152px;
+    min-width: 149px;
+    height: 73px;
   }
 
   @media (min-width: @desktop-width) {
@@ -115,7 +117,7 @@
 .price-app-list-header-hit {
   position: relative;
   background-image: url("../img/hit.svg");
-  background-position: 0 0;
+  background-position: -19px 0;
   background-repeat: no-repeat;
 }
 
@@ -130,6 +132,11 @@
   line-height: 30px;
   content: attr(data-parent);
   transform: rotate(-45deg);
+
+  @media (min-width: @tablet-width) {
+    left: 4px;
+    top: 10px;
+  }
 }
 
 .price-app-list-license-type {
@@ -175,7 +182,7 @@
 
   @media (min-width: @tablet-width) {
     text-transform: unset;
-    padding: 18px 24px 17px 15px;
+    padding: 5px 20px 10px 15px;
   }
 
   @media (min-width: @desktop-width) {

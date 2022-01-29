@@ -1,7 +1,7 @@
 .efficiency {
   display: none;
   margin-top: 51px;
-  margin-bottom: 109px;
+  margin-bottom: 103px;
 
   @media (min-width: @tablet-width) {
     min-height: 276px;
@@ -37,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 35px;
-  margin-right: 71px;
+  padding-top: 46px;
+  margin-right: 74px;
   background-image: url("../img/icon-timer.svg");
   background-position: center;
   background-size: 236px;
@@ -79,7 +79,6 @@
     width: 296px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -88,7 +87,8 @@
 }
 
 .efficiency__title {
-  margin-bottom: 24px;
+  margin-top: 45px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -96,17 +96,26 @@
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .efficiency__description {
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 9px;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 47px;
+
+    br {
+      display: none;
+    }
   }
 }
 
