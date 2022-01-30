@@ -144,6 +144,7 @@
   padding-bottom: 10px;
   line-height: 32px;
   color: #ffffff;
+  text-decoration: none;
 
   @media (min-width: @desktop-width) {
     font-family: "Open Sans", "Calibri", sans-serif;
@@ -159,7 +160,7 @@
     transition: border 0.1s linear;
   }
 
-  &:focus {
+  &:focus:not(:hover) {
     opacity: 0.3;
     border: none;
     outline: none;
