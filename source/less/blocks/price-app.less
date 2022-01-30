@@ -15,9 +15,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 57px;
     padding-top: 150px;
     padding-bottom: 95px;
-    background-size: 100% 80px;
+    background-size: 100% 98px;
   }
 }
 
@@ -85,6 +86,10 @@
     left: auto;
     transform: none;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -7px;
+  }
 }
 
 
@@ -110,7 +115,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 234px;
+    min-width: 228px;
+    height: 93px;
   }
 }
 
@@ -119,6 +125,10 @@
   background-image: url("../img/hit.svg");
   background-position: -19px 0;
   background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    background-position: -3px 0;
+  }
 }
 
 .price-app-list-header-hit::before {
@@ -137,6 +147,11 @@
     left: 4px;
     top: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 14px;
+    top: 14px;
+  }
 }
 
 .price-app-list-license-type {
@@ -145,6 +160,11 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 2px;
+    font-size: 18px;
+  }
 }
 
 .price-app-list-license-price {
@@ -153,6 +173,12 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 2px;
+    padding-bottom: 4px;
+    font-size: 24px;
+  }
 }
 
 
@@ -186,7 +212,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 23px 65px 23px 22px;
+    padding: 12px 20px 17px 20px;
     font-weight: normal;
     font-size: 18px;
   }
