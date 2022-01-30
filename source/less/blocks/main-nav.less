@@ -135,6 +135,7 @@
   border-bottom: 1px solid #000000;
 
   @media (min-width: @desktop-width) {
+    margin-top: 10px;
     border: unset;
   }
 }
@@ -160,7 +161,7 @@
     transition: border 0.1s linear;
   }
 
-  &:focus:not(:hover) {
+  &:focus {
     opacity: 0.3;
     border: none;
     outline: none;
