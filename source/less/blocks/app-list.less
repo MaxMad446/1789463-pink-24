@@ -1,16 +1,18 @@
 .app-list {
   margin: 0 auto;
-  padding-top: 430px;
+  min-width: 320px;
+  padding-top: 350px;
+  color: #ffffff;
   background-image: url("../img/header/iphone-mobile.png");
-  background-position: 0% 29%;
+  background-position: left 10%;
   background-size: 257px 286px;
   background-repeat: no-repeat;
-  color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     width: 660px;
     max-width: 660px;
-    padding-top: 330px;
+    padding-top: 0;
     background-color: unset;
     background-image: url("../img/header/iphone-tablet.png");
     background-position: 55% bottom;
@@ -40,6 +42,10 @@
     background-color: unset;
     margin-left: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .app-list__header {
@@ -57,10 +63,9 @@
   }
 }
 
-.app-list__title {
-  position: absolute;
-  top: -405px;
+.page-header__title-text {
   width: 280px;
+  margin-top: 23px;
   text-align: center;
   font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
@@ -70,17 +75,33 @@
   background-color: unset;
 
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.app-list__title {
+  display: none;
+  width: 280px;
+  text-align: center;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+
+  @media (min-width: @tablet-width) {
     display: block;
-    top: -238px;
-    margin-left: 47px;
+    margin-top: 92px;
+    margin-bottom: 94px;
+    margin-left: 67px;
+    line-height: 120%;
     font-size: 40px;
-    height: 127px;
     width: 207px;
   }
 
   @media (min-width: @desktop-width) {
-    left: -30px;
-    top: -232px;
+    margin-top: 97px;
+    margin-bottom: 28px;
+    margin-left: 37px;
     width: 247px;
     font-size: 50px;
     line-height: 68px;

@@ -12,7 +12,7 @@
     right: 0;
     height: 33px;
     background-image: url("../img/triangle-white-footer.svg");
-    background-size: 100% 33px;
+    background-size: 100% 64px;
     background-position: 100% 0;
     background-repeat: no-repeat;
 
@@ -30,8 +30,12 @@
 }
 
 .map__iframe {
-  height: 370px;
+  height: 231px;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    height: 370px;
+  }
 
   @media (min-width: @desktop-width) {
     height: 505px;

@@ -196,8 +196,18 @@
   }
 
   @media (min-width: @tablet-width) {
+    br:last-of-type {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
     br {
       display: block;
+    }
+
+    br:last-of-type {
+      display: none;
     }
   }
 }
@@ -207,7 +217,7 @@
     display: none;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     br {
       display: block;
     }
