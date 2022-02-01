@@ -29,6 +29,7 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
@@ -108,13 +109,13 @@
   border: unset;
 
   @media (min-width: @tablet-width) {
-    padding: 47px 60px 53px;
+    padding: 47px 0 53px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 44px 60px 44px;
+    padding: 44px 0 44px;
   }
 }
 
@@ -147,6 +148,10 @@
   border: none;
 
   @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    padding: 0;
     background-color: unset;
     border: 2px solid @lightgray;
     border-radius: 1px;
@@ -215,6 +220,15 @@
 
 .reg-form_applications {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    padding: 0;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
 }
 
 .applications__list {
@@ -271,6 +285,10 @@
   border: none;
 
   @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    padding: 0;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
