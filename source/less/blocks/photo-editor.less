@@ -177,6 +177,31 @@
   }
 }
 
+.photo-editor__icon {
+  cursor: pointer;
+  fill: @darkblue;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    fill: @red;
+    opacity: unset;
+  }
+
+  &:hover {
+    fill: @darkblue;
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: @red;
+  }
+}
+
+.photo-editor__icon--active {
+  fill: @red;
+  opacity: unset;
+}
+
 .photos__editor-range {
   top: 5px;
   position: relative;
@@ -207,6 +232,10 @@
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    background: @red;
+  }
 }
 
 .photos__editor-range--crop,
@@ -282,10 +311,11 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  border: 3px solid #283645;
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
   box-sizing: border-box;
   border-radius: 30px;
-  opacity: 0.1;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 260px;
@@ -296,6 +326,29 @@
     width: 183px;
     margin-left: -8px;
     margin-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: @red;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.btn-cancel {
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    background-color: unset;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @darkblue;
+    opacity: 0.3;
   }
 }
 
