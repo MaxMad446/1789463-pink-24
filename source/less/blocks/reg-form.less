@@ -1,3 +1,8 @@
+.reg-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .reg-form__block {
   font-family: "Open Sans", "Calibri", sans-serif;
   background-color: @lightgray;
@@ -27,6 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  order: 6;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -39,6 +45,7 @@
 .reg-form__user {
   border: none;
   background-color: unset;
+  order: 1;
 }
 
 .reg-form__list {
@@ -107,6 +114,7 @@
   justify-content: center;
   background-color: #ffffff;
   border: unset;
+  order: 5;
 
   @media (min-width: @tablet-width) {
     padding: 47px 0 53px;
@@ -146,8 +154,10 @@
 .reg-form__progress {
   background-color: @lightgray;
   border: none;
+  order: 2;
 
   @media (min-width: @tablet-width) {
+    order: 4;
     width: 620px;
     margin: 0 auto;
     margin-bottom: 65px;
@@ -220,8 +230,10 @@
 
 .reg-form_applications {
   border: none;
+  order: 4;
 
   @media (min-width: @tablet-width) {
+    order: 2;
     width: 620px;
     margin: 0 auto;
     margin-bottom: 65px;
@@ -283,6 +295,7 @@
 .communication {
   background-color: unset;
   border: none;
+  order: 3;
 
   @media (min-width: @tablet-width) {
     width: 620px;
