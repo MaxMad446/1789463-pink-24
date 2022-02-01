@@ -5,7 +5,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: unset;
-    border: 2px solid @lightgray;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
     margin-bottom: 65px;
   }
@@ -15,11 +15,18 @@
   text-align: center;
   color: @red;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .reg-form__submit {
   display: flex;
-
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
@@ -30,6 +37,7 @@
 
 .reg-form__user {
   border: none;
+  background-color: unset;
 }
 
 .reg-form__list {
@@ -44,16 +52,21 @@
 .reg-form__label {
   display: flex;
   align-items: center;
+  flex-direction: column;
   text-transform: uppercase;
   color: @red;
   font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .reg-form__input {
   width: 100%;
   min-width: 276px;
   height: 55px;
-  border: 2px solid @lightgray;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
 
   @media (min-width: @tablet-width) {
@@ -85,14 +98,18 @@
   }
 }
 
+
+// Feeling //
+
 .reg-form__feeling {
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
   border: unset;
 
   @media (min-width: @tablet-width) {
     padding: 47px 60px 53px;
-    border: 2px solid @lightgray;
+    border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
 
@@ -101,17 +118,17 @@
   }
 }
 
-
 .reg-form__comment {
-  min-width: 276px;
+  min-width: 240px;
   padding: 22px 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: @darkblue;
-  border: 2px solid @lightgray;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
+  resize: none;
 
 
   @media (min-width: @tablet-width) {
@@ -137,6 +154,8 @@
 }
 
 .progress__list {
+  padding: 0;
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -155,10 +174,11 @@
 .progress-mark {
   content: "";
   position: absolute;
-  border: 2px solid @lightgray;
-  border-radius: 1px;
   width: 35px;
   height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
 }
 
 .progress-input[type="checkbox"]:checked + .progress-mark::before,
@@ -193,9 +213,12 @@
 
 // Application //
 
+.reg-form_applications {
+  border: none;
+}
+
 .applications__list {
-  margin: 0;
-  padding: 50px 52px;
+  padding: 0;
 }
 
 .applications__item {
@@ -225,7 +248,8 @@
   left: 0;
   width: 37px;
   height: 37px;
-  border: 2px solid @lightgray;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
   border-radius: 50%;
 }
 
@@ -242,9 +266,23 @@
 
 
 // Communication //
+.communication {
+  background-color: unset;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+}
+
+.communication__list {
+  padding: 0;
+}
 
 .communication__label {
   display: flex;
+  flex-direction: column;
 }
 
 .communication__text {
@@ -276,6 +314,11 @@
 }
 
 .communication__icon {
-  padding: 10px;
-  background-color: @lightgray;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding: 10px;
+    background-color: @lightgray;
+  }
 }

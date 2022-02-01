@@ -75,22 +75,25 @@
         <p class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </div>
 
-      <form class="reg-form container" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="reg-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="reg-form__block reg-form__user">
           <legend class="visually-hidden">Данные пользователя</legend>
-          <ul class="reg-form__list">
+          <ul class="reg-form__list container">
             <li class="reg-form__item">
-              <label class="reg-form__label">Фамилия:
+              <label class="reg-form__label">
+                <span>Фамилия:</span>
                 <input class="reg-form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
               </label>
             </li>
             <li class="reg-form__item">
-              <label class="reg-form__label">Имя:
+              <label class="reg-form__label">
+                <span>Имя:</span>
                 <input class="reg-form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
               </label>
             </li>
             <li class="reg-form__item">
-              <label class="reg-form__label">Отчество:
+              <label class="reg-form__label">
+                <span>Отчество:</span>
                 <input class="reg-form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </li>
@@ -98,8 +101,8 @@
         </fieldset>
 
       <fieldset class="reg-form__block reg-form__progress ">
-        <legend class="reg-form__title">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="progress__list">
+        <legend class="reg-form__title">Ваши безбашенные<br> достижения в путешествии</legend>
+        <ul class="progress__list container">
           <li class="progress__item">
             <label class="progress__form">
               <input class="visually-hidden progress-input" type="checkbox" name="Сделал селфи с акулой" checked>
@@ -147,7 +150,7 @@
 
       <fieldset class="reg-form__block communication">
         <legend class="reg-form__title reg-form__title--communication">Контактная информация</legend>
-        <ul class="communication__list">
+        <ul class="communication__list container">
           <li class="communication__item">
             <label class="communication__label" for="tel">
               <span class="communication__text">Номер телефона</span>
@@ -172,7 +175,7 @@
 
       <fieldset class="reg-form__block reg-form_applications">
         <legend class="reg-form__title">С каким приложением путешествовали?</legend>
-        <ul class="applications__list">
+        <ul class="applications__list container">
           <li class="applications__item">
             <label class="applications__el">
                 <input class="visually-hidden applications__el-input" type="radio" name="iOS" value="pink-for-ios" checked>
@@ -200,7 +203,7 @@
       <fieldset class="reg-form__block reg-form__feeling">
           <h2 class="visually-hidden">Эмоции</h2>
           <legend class="reg-form__title">Опишите свои эмоции</legend>
-          <textarea class="reg-form__comment" name="reg-form__comment" id="comment" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="reg-form__comment" name="reg-form__comment" id="comment" cols="1" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
 
       <div class="reg-form__submit">
