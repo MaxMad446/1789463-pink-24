@@ -110,6 +110,34 @@
   width: 100%;
 }
 
+.photos__cool-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.photos__cool {
+  width: 140px;
+  height: 36px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: @red;
+  margin-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+  }
+}
+
 .photos__item-image {
   display: block;
   width: 100%;
