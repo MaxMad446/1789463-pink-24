@@ -68,6 +68,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-bottom: 55px;
+
     &:nth-child(2n) {
       padding-right: 20px;
     }
@@ -157,6 +159,12 @@
       display: none;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 26px;
+    padding-top: 25px;
+    grid-template-rows: 23% 53%;
+  }
 }
 
 .photos__comments--panorama {
@@ -169,8 +177,15 @@
 
   @media (min-width: @desktop-width) {
     min-height: 30px;
-    padding-top: 20px;
+    padding-left: 27px;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    grid-template-rows: 25% 98% 0;
   }
+}
+
+.photos__comments--panorama .photos__text {
+  margin-top: 12px;
 }
 
 .photos__time {
@@ -217,7 +232,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 6px;
+    margin-top: 0;
   }
 }
 

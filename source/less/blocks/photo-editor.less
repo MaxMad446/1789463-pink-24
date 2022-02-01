@@ -19,8 +19,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 67px;
-    margin-bottom: 75px;
+    margin-top: 3px;
+    margin-bottom: 70px;
   }
 }
 
@@ -34,6 +34,7 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    min-height: 514px;
   }
 }
 
@@ -41,6 +42,12 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    grid-gap: 96px;
   }
 }
 
@@ -58,8 +65,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 90px;
-    padding-bottom: 57px;
+    padding: 0;
+    padding-left: 80px;
+    padding-top: 55px;
   }
 }
 
@@ -106,7 +114,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 55px;
+    width: 410px;
+    padding: 0;
   }
 }
 
@@ -124,6 +133,11 @@
 .photo-editor__wrapper-icon {
   padding: 5px;
   width: 40px;
+
+  @media (min-width: @desktop-width) {
+    padding: 5px 10px 0 0;
+    margin-left: -5px;
+  }
 }
 
 .photo-editor__icon-crop {
@@ -157,6 +171,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-left: 5px;
     width: 32px;
     height: 32px;
   }
@@ -174,6 +189,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 15px;
     width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
   }
 }
 
@@ -208,14 +227,26 @@
 
 .photos__editor-range--crop .range-toggle {
   right: 26px;
+
+  @media (min-width: @desktop-width) {
+    right: 37px;
+  }
 }
 
 .photos__editor-range--fill .range-toggle {
   left: 25px;
+
+  @media (min-width: @desktop-width) {
+    left: 37px;
+  }
 }
 
 .photos__editor-range--contrast .range-toggle {
   right: 92px;
+
+  @media (min-width: @desktop-width) {
+    right: 133px;
+  }
 }
 
 .photos-editor__container-btn {
@@ -238,7 +269,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 410px;
     flex-direction: row;
+    padding: 0;
   }
 }
 
@@ -261,6 +294,8 @@
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin-left: -8px;
+    margin-bottom: 10px;
   }
 }
 
