@@ -1,6 +1,13 @@
 .reg-form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+    flex-direction: row;
+  }
 }
 
 .reg-form__block {
@@ -46,15 +53,33 @@
   border: none;
   background-color: unset;
   order: 1;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 .reg-form__list {
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 433px;
+  }
 }
 
 .reg-form__item {
   list-style-type: none;
   margin-bottom: 29px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.reg-form__item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .reg-form__label {
@@ -171,6 +196,11 @@
 .progress__list {
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    padding: 40px 0;
+    width: 496px;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -241,10 +271,25 @@
     border: 2px solid #e5e5e5;
     border-radius: 1px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 431px;
+    margin: 0;
+    margin-bottom: 65px;
+  }
 }
 
 .applications__list {
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 496px;
+    padding: 50px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+  }
 }
 
 .applications__item {
@@ -309,6 +354,11 @@
 
 .communication__list {
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 496px;
+    padding: 40px 0;
+  }
 }
 
 .communication__label {
