@@ -51,6 +51,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
     list-style-type: none;
   }
 }
@@ -149,13 +150,28 @@
   background: @green;
   border: 2px solid @green;
   border-radius: 1px;
+  text-transform: uppercase;
 
 
   @media (min-width: @tablet-width) {
-    width: 296px;
+    width: 300px;
   }
 }
 
+.reg-form__symbol {
+  width: 10px;
+  height: 10px;
+  color: @red;
+}
+
+
+.reg-form__text {
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+}
 
 // Feeling //
 
@@ -167,9 +183,10 @@
   order: 5;
 
   @media (min-width: @tablet-width) {
-    padding: 47px 0 53px;
+    padding: 32px 0 53px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: @desktop-width) {
@@ -180,6 +197,7 @@
 .reg-form__comment {
   min-width: 240px;
   padding: 22px 20px;
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -191,7 +209,9 @@
 
 
   @media (min-width: @tablet-width) {
-    min-width: 450px;
+    padding: 12px 20px;
+    min-width: 455px;
+    height: 160px;
   }
 
   @media (min-width: @desktop-width) {
@@ -210,7 +230,7 @@
     order: 4;
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 65px;
+    margin-bottom: 54px;
     padding: 0;
     background-color: unset;
     border: 2px solid @lightgray;
@@ -226,7 +246,7 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 40px 0;
+    padding: 37px 0 4px;
     width: 496px;
   }
 
