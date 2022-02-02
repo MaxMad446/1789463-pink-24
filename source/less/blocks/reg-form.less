@@ -387,6 +387,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding: 26px 0 13px;
     width: 820px;
     display: flex;
     flex-wrap: wrap;
@@ -396,11 +397,7 @@
 .communication__label {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 .communication__text {
@@ -410,6 +407,20 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @red;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 19px;
+    order: 2;
+  }
+}
+
+.communication__wrapper {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+    order: 1;
+  }
 }
 
 .communication__item {
@@ -417,10 +428,25 @@
   appearance: none;
 }
 
+.communication__item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
+  }
+}
+
 .communication__input {
-  height: 55px;
+  height: 57px;
+  min-width: 276px;
   border: 2px solid @lightgray;
   border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 436px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 308px;
+  }
 }
 
 .communication__input::placeholder {
@@ -429,6 +455,10 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 18px;
+  }
 }
 
 .communication__icon {
@@ -436,7 +466,13 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding: 10px;
+    padding: 22px 20px;
     background-color: @lightgray;
+  }
+}
+
+.communication__icon--email {
+  @media (min-width: @tablet-width) {
+    padding: 25px 20px;
   }
 }
