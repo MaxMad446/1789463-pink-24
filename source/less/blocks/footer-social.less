@@ -1,4 +1,48 @@
 .social__list {
+  height: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   text-decoration: none;
+  margin-bottom: 45px;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 14px;
+}
+
+.social__item:last-child {
+  margin: 0;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  fill: #d22856;
+  border-radius: 50%;
+  padding: 17px;
+  outline: 3px solid rgba(40, 54, 69, 0.3);
+
+  &:hover {
+    outline: 3px solid @darkblue;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.social__link--facebook {
+  padding: 15px 20px;
 }

@@ -1,6 +1,7 @@
 .page-footer__copyright {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 
   font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
@@ -8,8 +9,19 @@
   font-size: 14px;
   line-height: 18px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+  }
+
   @media (min-width: @desktop-width) {
+    padding-top: 9px;
     font-size: 18px;
+  }
+}
+
+.page-footer--catalog .page-footer__copyright {
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -18,5 +30,17 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 13px;
+  }
+}
+
+.page-footer__copyright svg {
+  fill: @red;
+
+  &:hover {
+    fill: @darkblue;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }

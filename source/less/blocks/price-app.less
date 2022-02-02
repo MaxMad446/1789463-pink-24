@@ -1,0 +1,261 @@
+.price-app {
+  padding-top: 91px;
+  padding-bottom: 32px;
+  background-color: @lightgray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 19px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 86px;
+    padding-bottom: 64px;
+    background-size: 100% 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 150px;
+    padding-bottom: 95px;
+    background-size: 86% 120px;
+  }
+}
+
+.price-app__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.price__slider {
+  overflow: hidden;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price-app__toggles {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-left: 20px;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price-app__item {
+  list-style-type: none;
+  margin-right: 19px;
+
+  :hover {
+    opacity: 0.6;
+  }
+
+  :active {
+    opacity: 0.1;
+  }
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  background-color: @darkblue;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+}
+
+.slider__toggle-current {
+  background-color: #ffffff;
+  outline: 3px solid @darkblue;
+  opacity: unset;
+  border-radius: 50%;
+}
+
+.price-app__list {
+  position: relative;
+  top: 9px;
+  left: 8%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    left: auto;
+    transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -7px;
+  }
+}
+
+
+.price-app-list-header {
+  min-width: 266px;
+  height: 91px;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @darkblue;
+  border: 2px solid #283645;
+  border-radius: 1px 0 0 0;
+
+  &:first-child {
+    background-color: unset;
+    border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 149px;
+    height: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 228px;
+    height: 93px;
+  }
+}
+
+.price-app-list-header-hit {
+  position: relative;
+  background-image: url("../img/hit.svg");
+  background-position: -6px 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-position: -19px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: -3px 0;
+  }
+}
+
+.price-app-list-header-hit::before {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  content: attr(data-parent);
+  transform: rotate(-45deg);
+
+  @media (min-width: @tablet-width) {
+    left: 4px;
+    top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 14px;
+    top: 14px;
+  }
+}
+
+.price-app-list-license-type {
+  padding: 0;
+  margin: 0;
+  margin-top: -16px;
+  margin-left: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    padding-left: 2px;
+    font-size: 18px;
+  }
+}
+
+.price-app-list-license-price {
+  padding: 0;
+  margin: 0;
+  margin-left: 6px;
+  margin-top: -3px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 2px;
+    padding-bottom: 4px;
+    font-size: 24px;
+  }
+}
+
+
+.price-app__cell-title {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    text-transform: unset;
+    padding: 18px 24px 17px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 65px 23px 22px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+}
+
+.price-app__cell {
+  padding: 12px 15px 17px 17px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    text-transform: unset;
+    padding: 5px 20px 10px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 12px 20px 17px 20px;
+    font-weight: normal;
+    font-size: 18px;
+  }
+}
+
+.price-app__feature-name {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.price-app__feature {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+  }
+}

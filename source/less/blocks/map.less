@@ -1,0 +1,43 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    background-image: url("../img/triangle-white-footer.svg");
+    background-size: 100% 64px;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      height: 67px;
+      background-size: 100% 67px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/triangle-white-footer-desktop.svg");
+      height: 122px;
+      background-size: 100% 111px;
+    }
+  }
+}
+
+.map__iframe {
+  height: 231px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    height: 370px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 505px;
+  }
+}

@@ -3,45 +3,324 @@
   background: @lightgray;
 }
 
-.photo-editor__wrapper {
-  background: @lightgray;
-}
-
-.photo-editor__item {
+.photo-editor__header {
   display: flex;
-  justify-content: space-around;
-  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 42px;
+  font-size: 14px;
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: column;
+    margin-top: 44px;
+    margin-bottom: 70px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 3px;
+    margin-bottom: 70px;
   }
 }
 
-.photos-editor__container-btn {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  background: @lightgray;
+.photo-editor__tagline {
+  margin: 0;
+}
 
+.photo-editor__wrapper {
+  background: @lightgray;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    min-height: 514px;
+  }
+}
+
+.photo-editor__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    grid-gap: 96px;
+  }
+}
+
+.photo-editor__upload-image {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    margin: 0;
+    padding-top: 57px;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-left: 80px;
+    padding-top: 55px;
+  }
+}
+
+.photos-editor-img {
+  height: 374px;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+    width: 300px;
+  }
+}
+
+
+.photo-editor__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+  }
+}
+
+.photo-editor__item {
+  width: 280px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-bottom: 19px;
+  list-style: none;
+
+
+  @media (min-width: @tablet-width) {
+    width: 267px;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 46px;
+    padding-left: 33px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+    padding: 0;
+  }
+}
+
+.photo-editor__piece {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 70px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+}
+
+.photo-editor__wrapper-icon {
+  padding: 5px;
+  width: 40px;
+
+  @media (min-width: @desktop-width) {
+    padding: 5px 10px 0 0;
+    margin-left: -5px;
+  }
+}
+
+.photo-editor__btn-icon {
+  border: none;
+  background-color: unset;
+}
+
+.photo-editor__icon-crop {
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.photo-editor__icon-fill {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.photo-editor__icon-contrast {
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 5px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.photo-editor__icon {
+  cursor: pointer;
+  fill: @darkblue;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    fill: @red;
+    opacity: unset;
+  }
+
+  &:hover {
+    fill: @darkblue;
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: @red;
+  }
+}
+
+.photo-editor__icon--active {
+  fill: @red;
+  opacity: unset;
+}
+
+.photos-editor-range {
+  top: 5px;
+  position: relative;
+  width: 241px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  background-color: @darkblue;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
+}
+
+.range-toggle {
+  position: absolute;
+  right: 33px;
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 2px solid @red;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background: @red;
+  }
+}
+
+.photos-editor-range--crop,
+.photos-editor-range--fill,
+.photos-editor-range--contrast {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.photos-editor-range--global {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photos-editor-range--crop .range-toggle {
+  right: 26px;
+
+  @media (min-width: @desktop-width) {
+    right: 37px;
+  }
+}
+
+.photos-editor-range--fill .range-toggle {
+  left: 25px;
+
+  @media (min-width: @desktop-width) {
+    left: 37px;
+  }
+}
+
+.photos-editor-range--contrast .range-toggle {
+  right: 92px;
+
+  @media (min-width: @desktop-width) {
+    right: 133px;
+  }
+}
+
+.photos-editor-btn-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  background: @lightgray;
+  border-top: 1px solid rgba(40, 54, 69, 0.1);
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    padding-top: 65px;
+    padding-left: 27px;
+    border-top: none;
+  }
 
   @media (min-width: @desktop-width) {
+    width: 410px;
     flex-direction: row;
+    padding: 0;
   }
 }
 
 .photo-editor__btn {
   width: 280px;
   margin-bottom: 12px;
-  padding: 21px 0;
+  height: 55px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  border: 3px solid #283645;
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
   box-sizing: border-box;
   border-radius: 30px;
-  opacity: 0.1;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 260px;
@@ -50,6 +329,31 @@
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin-left: -8px;
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: @red;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.btn-cancel {
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    background-color: unset;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @darkblue;
+    opacity: 0.3;
   }
 }
 
