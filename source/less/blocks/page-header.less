@@ -154,6 +154,22 @@
   }
 }
 
+.page-header__title-text {
+  width: 280px;
+  margin-top: 23px;
+  text-align: center;
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  background-color: unset;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .page-header__title-wrap {
   @media (min-width: @desktop-width) {
     display: none;
@@ -165,8 +181,8 @@
   margin-bottom: 5px;
 }
 
-.catalog,
-.form {
+.page-header--catalog,
+.page-header--form {
   background-size: 704px 193%;
 
   @media (min-width: @tablet-width) {
@@ -178,3 +194,4 @@
     background-size: 2560px 853px;
   }
 }
+
