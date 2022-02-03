@@ -195,12 +195,19 @@
   }
 }
 
+.photos__comments:nth-child(5) {
+  padding: 15px 10px 13px 17px;
+}
+
 .photos__comments--panorama {
+  padding: 8px 10px 15px 17px;
+
   @media (min-width: @tablet-width) {
-    min-height: 90px;
+    min-height: 102px;
     padding-left: 30px;
     padding-top: 19px;
     padding-bottom: 0;
+    grid-template-rows: 16% 74% 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -212,8 +219,16 @@
   }
 }
 
+.photos__comments--panorama .photos__username {
+  margin-top: 10px;
+}
+
 .photos__comments--panorama .photos__text {
-  margin-top: 12px;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 12px;
+  }
 }
 
 .photos__time {
