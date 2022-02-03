@@ -282,14 +282,31 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-fail modal-container-close ">
       <div class="modal modal-wrapper">
         <p class="modal-title">Что-то пошло не так!</p>
         <p class="modal-text">Проверьте поля, выделенные красным,
           скорее всего вы забыли их заполнить</p>
-        <button class="modal-button" type="button">
-          <span class="modal-btn-text">Ок</span>
-        </button>
+        <div class="modal-button-container">
+          <button class="modal-button" type="button">
+            <span class="modal-btn-text">Ок</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container modal-success">
+      <div class="modal modal-wrapper--success modal-wrapper">
+        <p class="modal-title modal-title-success">Ваша заявка отправлена</p>
+        <p class="modal-text modal-text-success">Спасибо за ваше участие, ваша заявка
+          уже поступила к нам. В ближайшее
+          время мы рассмотрим ее и<br>
+          оповестим вас.</p>
+        <div class="modal-button-container modal-button-container-success">
+          <button class="modal-button modal-button--success" type="button">
+            <span class="modal-btn-text">Закрыть окно</span>
+          </button>
+        </div>
       </div>
     </div>
   </body>
