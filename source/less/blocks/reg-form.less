@@ -11,6 +11,7 @@
 }
 
 .reg-form__block {
+  position: relative;
   font-family: "Open Sans", "Calibri", sans-serif;
   background-color: @lightgray;
   margin-bottom: 44px;
@@ -24,7 +25,13 @@
 }
 
 .reg-form__title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 38px;
   text-align: center;
+  font-size: 14px;
+  line-height: 18px;
   color: @red;
   text-transform: uppercase;
 
@@ -57,6 +64,7 @@
 }
 
 .reg-form__user {
+  margin-bottom: 13px;
   border: none;
   background-color: unset;
   order: 1;
@@ -82,8 +90,10 @@
 }
 
 .reg-form__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19px;
   list-style-type: none;
-  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
@@ -105,27 +115,28 @@
 }
 
 .reg-form__label {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-left: 23px;
   text-transform: uppercase;
   color: @red;
 
   @media (min-width: @tablet-width) {
+    align-items: center;
     flex-direction: row;
   }
 }
 
 .reg-form__input {
-  width: 100%;
-  min-width: 276px;
-  height: 55px;
+  width: 272px;
+  height: 56px;
+  margin-top: 5px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
 
   @media (min-width: @tablet-width) {
+    width: 100%;
+    min-width: 276px;
     margin-left: 20px;
   }
 }
@@ -236,6 +247,8 @@
 // Progress //
 
 .reg-form__progress {
+  padding-top: 100px;
+  margin-bottom: 28px;
   background-color: @lightgray;
   border: none;
   order: 2;
@@ -257,6 +270,7 @@
 }
 
 .reg-form__progress-list {
+  margin-top: 15px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -279,6 +293,10 @@
   list-style-type: none;
   min-width: 257px;
   margin-bottom: 50px;
+}
+
+.reg-form__progress-item:last-child {
+  margin-bottom: 38px;
 }
 
 
@@ -461,7 +479,7 @@
 
 
 // Communication //
-.communication {
+.reg-form__block--communication {
   background-color: unset;
   border: none;
   order: 3;
@@ -481,7 +499,16 @@
   }
 }
 
-.communication__list {
+.reg-form__title--communication {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: block;
+  }
+}
+
+.reg-form__communication-list {
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -497,13 +524,15 @@
   }
 }
 
-.communication__label {
+.reg-form__communication-label {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 18px;
 }
 
-.communication__text {
+.reg-form__communication-text {
+  padding-left: 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -517,8 +546,9 @@
   }
 }
 
-.communication__wrapper {
+.reg-form__communication-wrapper {
   display: flex;
+  padding-top: 6px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 10px;
@@ -526,7 +556,7 @@
   }
 }
 
-.communication__item {
+.reg-form__communication-item {
   list-style-type: none;
   appearance: none;
 
@@ -535,13 +565,13 @@
   }
 }
 
-.communication__item:last-child {
+.reg-form__communication-item:last-child {
   @media (min-width: @desktop-width) {
     margin-left: 70px;
   }
 }
 
-.communication__input {
+.reg-form__communication-input {
   height: 57px;
   min-width: 276px;
   border: 2px solid @lightgray;
@@ -556,23 +586,16 @@
   }
 }
 
-.communication__input::placeholder {
+.reg-form__communication-input::placeholder {
+  padding-left: 18px;
   font-family: "Open Sans", "Calibri", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 18px;
-  }
 }
 
-.communication__icon {
+.reg-form__communication-icon {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -582,7 +605,7 @@
   }
 }
 
-.communication__icon--email {
+.reg-form__communication-icon--email {
   @media (min-width: @tablet-width) {
     padding: 25px 20px;
   }
