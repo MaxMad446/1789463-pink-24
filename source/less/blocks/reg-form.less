@@ -256,7 +256,7 @@
   }
 }
 
-.progress__list {
+.reg-form__progress-list {
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -273,7 +273,7 @@
   }
 }
 
-.progress__item {
+.reg-form__progress-item {
   position: relative;
   display: block;
   list-style-type: none;
@@ -372,7 +372,7 @@
 
 // Application //
 
-.reg-form_applications {
+.reg-form__applications {
   border: none;
   order: 4;
 
@@ -394,7 +394,7 @@
   }
 }
 
-.applications__list {
+.reg-form__applications-list {
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -408,7 +408,7 @@
   }
 }
 
-.applications__item {
+.reg-form__applications-item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -423,14 +423,14 @@
   }
 }
 
-.applications__el {
+.reg-form__applications-el {
   display: flex;
   padding-left: 30px;
   align-items: center;
   appearance: none;
 }
 
-.applications__el-label {
+.reg-form__applications-el-label {
   padding-left: 31px;
   font-style: normal;
   font-weight: normal;
@@ -438,7 +438,7 @@
   line-height: 30px;
 }
 
-.applications__el-mark {
+.reg-form__applications-el-mark {
   position: absolute;
   left: 0;
   width: 37px;
@@ -448,7 +448,7 @@
   border-radius: 50%;
 }
 
-.applications__el-input[type="radio"]:checked + .applications__el-mark::before {
+.reg-form__applications-el-input[type="radio"]:checked + .reg-form__applications-el-mark::before {
   content: "";
   position: absolute;
   top: 11px;
