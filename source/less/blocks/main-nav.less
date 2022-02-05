@@ -38,12 +38,15 @@
   }
 }
 
-.main-nav__wrapper {
+.main-nav__site-list {
   display: flex;
+  flex-direction: column;
+
 
   @media (min-width: @desktop-width) {
     position: relative;
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -62,7 +65,7 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle:active::before {
+.main-nav--closed .page-header__toggle:active::before {
   background-color: fade(#ffffff, 30%);
   box-shadow:
     0 8px 0 0 fade(#ffffff, 30%),
@@ -135,7 +138,6 @@
   border-bottom: 1px solid #000000;
 
   @media (min-width: @desktop-width) {
-    margin-top: 10px;
     border: unset;
   }
 }
