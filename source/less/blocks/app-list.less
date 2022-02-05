@@ -8,6 +8,10 @@
   background-size: 257px 286px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header/iphone-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 660px;
@@ -17,6 +21,10 @@
     background-image: url("../img/header/iphone-tablet.png");
     background-position: 55% bottom;
     background-size: 700px 545px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/iphone-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +34,10 @@
     background-image: url("../img/header/iphone-desktop.png");
     background-position: -26% bottom;
     background-size: 1054px 647px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/iphone-desktop@2x.png");
+    }
   }
 }
 

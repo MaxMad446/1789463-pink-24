@@ -9,16 +9,29 @@
   background-repeat: no-repeat;
   color: #ffffff;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header/back-mobile@2x.jpg");
+  }
+
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/header/back-tablet.jpg");
     background-position: 50% 85%;
     background-size: 1200px 730px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/header/back-desktop.jpg");
     background-position: 50% 0;
     background-size: 2560px 867px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header/back-desktop@2x.jpg");
+    }
   }
 }
 
