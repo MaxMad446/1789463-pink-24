@@ -117,6 +117,7 @@
 
   @media (min-width: @desktop-width) {
     width: 410px;
+    margin-top: 41px;
     padding: 0;
   }
 }
@@ -150,6 +151,10 @@
 .photo-editor__btn-icon {
   border: none;
   background-color: unset;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .photo-editor__icon-crop {
@@ -172,6 +177,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 2px;
     width: 48px;
     height: 43px;
   }
@@ -363,6 +369,10 @@
 }
 
 .btn-cancel {
+  @media (min-width: @desktop-width) {
+    margin-right: 5px;
+  }
+
   &:hover {
     color: rgba(40, 54, 69, 0.3);
     border: 3px solid rgba(40, 54, 69, 0.3);
