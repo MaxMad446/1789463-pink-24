@@ -53,6 +53,10 @@
   @media (min-width: @tablet-width) {
     margin-top: -32px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -3px;
+  }
 }
 
 .reg-form__submit {
@@ -68,6 +72,10 @@
     align-items: center;
     margin-bottom: 28px;
     list-style-type: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 5px;
   }
 }
 
@@ -183,6 +191,10 @@
     width: 300px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+
   &:hover {
     background-color: #1c9b5e;
   }
@@ -214,6 +226,16 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  span {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    span {
+      display: inline-block;
+    }
+  }
 }
 
 // Feeling //
@@ -234,7 +256,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 44px 0 44px;
+    padding: 30px 0 43px;
   }
 }
 
@@ -266,7 +288,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 770px;
+    min-width: 775px;
+    height: 95px;
   }
 }
 
@@ -292,6 +315,7 @@
 
   @media (min-width: @desktop-width) {
     width: 940px;
+    padding: 0 0 58px;
   }
 }
 
@@ -307,9 +331,10 @@
   @media (min-width: @desktop-width) {
     width: 816px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 2em;
-    grid-gap: 51px 52px;
+    grid-template-columns: 260px 238px 205px;
+    grid-auto-rows: 36px;
+    grid-gap: 43px;
+    grid-column-gap: 54px;
   }
 }
 
