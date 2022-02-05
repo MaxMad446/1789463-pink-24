@@ -150,7 +150,7 @@
 .reg-form__input {
   width: 236px;
   height: 56px;
-  padding: 0 18px;
+  padding: 1px 20px;
   margin-top: 5px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
@@ -341,7 +341,7 @@
 }
 
 .reg-form__progress-list {
-  margin-top: 15px;
+  margin-top: 18px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -364,7 +364,7 @@
   display: block;
   list-style-type: none;
   min-width: 257px;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .reg-form__progress-item:last-child {
@@ -424,6 +424,11 @@
   }
 }
 
+.reg-form__progress-form {
+  display: flex;
+  align-items: center;
+}
+
 .reg-form__progress-mark {
   content: "";
   position: absolute;
@@ -466,7 +471,7 @@
 }
 
 .reg-form__progress-label {
-  padding-left: 57px;
+  padding-left: 58px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -593,7 +598,7 @@
 
 // Communication //
 .reg-form__block--communication {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   background-color: unset;
   border: none;
   order: 3;
@@ -709,7 +714,7 @@
 
 .reg-form__communication-input {
   height: 57px;
-  min-width: 240px;
+  min-width: 236px;
   padding: 0 18px;
   border: 2px solid @lightgray;
   border-radius: 1px;
@@ -732,7 +737,7 @@
 }
 
 .reg-form__communication-input:placeholder-shown {
-  padding: 0 18px;
+  padding: 0 20px;
 }
 
 .reg-form__communication-icon {
