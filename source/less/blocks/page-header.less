@@ -244,9 +244,15 @@
 
 .page-header--nojs {
   height: auto;
+  width: 100%;
   background-position: 50% 94px;
   box-shadow: none;
   border-bottom: none;
+
+  .main-nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
 
   .main-nav--opened {
     height: auto;
@@ -266,7 +272,7 @@
 
     @media (min-width: @desktop-width) {
       width: 940px;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: unset;
       flex-direction: row;
     }
   }
