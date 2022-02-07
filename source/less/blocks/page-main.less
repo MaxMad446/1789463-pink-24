@@ -8,7 +8,6 @@
   background: #ffffff;
 }
 
-
 .page-main__wrapper-form {
   display: flex;
   justify-content: center;
@@ -16,19 +15,32 @@
 
 .page-main__title-form {
   margin-top: 44px;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
   text-align: center;
+
 
   @media (min-width: @tablet-width) {
     width: 490px;
     margin-top: 89px;
-    margin-bottom: 69px;
+    margin-bottom: 64px;
     font-size: 18px;
   }
 
   @media (min-width: @desktop-width) {
     width: 756px;
     margin-top: 92px;
-    margin-bottom: 66px;
+    margin-bottom: 71px;
+  }
+}
+
+.page-main__title-form-span {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
   }
 }
