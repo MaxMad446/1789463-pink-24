@@ -15,4 +15,3 @@ const pageHeader = document.querySelector('.page-header');
       navMain.classList.remove('main-nav--opened');
     }
   });
-
