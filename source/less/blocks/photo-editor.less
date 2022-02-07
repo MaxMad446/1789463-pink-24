@@ -80,7 +80,6 @@
   }
 }
 
-
 .photo-editor__list {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -104,7 +103,6 @@
   margin-left: 12px;
   padding-bottom: 19px;
   list-style: none;
-
 
   @media (min-width: @tablet-width) {
     width: 267px;
@@ -241,23 +239,6 @@
   }
 }
 
-.range-toggle {
-  position: absolute;
-  right: 33px;
-  top: -7px;
-  width: 15px;
-  height: 15px;
-  background: #ffffff;
-  border: 2px solid @red;
-  box-sizing: border-box;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &:active {
-    background: @red;
-  }
-}
-
 .photos-editor-range--crop,
 .photos-editor-range--fill,
 .photos-editor-range--contrast {
@@ -366,28 +347,4 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
-}
-
-.btn-cancel {
-  @media (min-width: @desktop-width) {
-    margin-right: 5px;
-  }
-
-  &:hover {
-    color: rgba(40, 54, 69, 0.3);
-    border: 3px solid rgba(40, 54, 69, 0.3);
-    background-color: unset;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: @darkblue;
-    opacity: 0.3;
-  }
-}
-
-.btn-active {
-  color: #d22856;
-  border: 3px solid #d22856;
-  opacity: unset;
 }
