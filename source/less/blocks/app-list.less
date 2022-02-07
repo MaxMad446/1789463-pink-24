@@ -1,11 +1,13 @@
 .app-list {
+  display: flex;
+  align-items: flex-end;
   margin: 0 auto;
   min-width: 320px;
-  padding-top: 348px;
+  min-height: 586px;
   color: #ffffff;
   background-image: url("../img/header/iphone-mobile.png");
   background-position: left 10%;
-  background-size: 257px 286px;
+  background-size: 257px 285px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -13,6 +15,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    display: block;
     margin: 0 auto;
     width: 660px;
     max-width: 660px;
