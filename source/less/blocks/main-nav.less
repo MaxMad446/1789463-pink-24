@@ -244,3 +244,42 @@
 .main-nav--nojs .page-header__toggle {
   display: none;
 }
+
+.main-nav--nojs {
+  height: auto;
+  background-position: 50% 94px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 50% 100%;
+  }
+
+  .page-header__content {
+    height: auto;
+    flex-direction: column;
+    width: auto;
+    background-color: @darkblue;
+
+    @media (min-width: @desktop-width) {
+      width: 940px;
+      background-color: rgba(0, 0, 0, 0.3);
+      flex-direction: row;
+    }
+  }
+
+  .page-header__wrapper-header {
+    margin: 0 auto;
+    width: 280px;
+
+    @media (min-width: @tablet-width) {
+      width: 620px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 940px;
+    }
+  }
+
+  .main-nav__site-list {
+    position: static;
+  }
+}
